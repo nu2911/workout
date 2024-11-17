@@ -1,7 +1,24 @@
-/* Mobile view */
+
+
+
+/* tablets */
+@media (max-width: 991px) {
+    #pricing{
+        grid-template-columns: 1fr 1fr 1fr ;
+        padding: 20px;
+        gap: 40px;
         
-@media (max-width:450px) {
-      .navbar {
+        
+    }
+    .elite{
+        grid-column: 2 / 3;
+
+    }
+  }
+
+/* smaller tablets */
+@media (max-width: 800px) {
+    .navbar {
         height: 3rem;
         padding: 0 1rem;
     }
@@ -9,13 +26,7 @@
     .navbar ul {
         margin-top: -11px;
     }
-    .nav-center{
-        position: absolute;
-        visibility: hidden;
-
-    }
     .nav-right li{
-        /* display: block; */
         float: left;
     }
     
@@ -29,7 +40,7 @@
     }
     
     .navbar ul li a {
-        font-size: 8px;
+        font-size: 12px;
         padding: 6px 13px;
     }
        
@@ -37,6 +48,49 @@
         margin-top: 3rem;
     }
     
+    
+    .plan {
+        transition: none; 
+    }
+
+    .plan:hover {
+        background: #252728;
+        transform: none;
+        transition: none;
+    }
+  }
+/* Mobile view */
+        
+@media (max-width:600px) {
+    .navbar {
+        height: 3rem;
+        padding: 0 1rem;
+    }
+    
+    .navbar ul {
+        margin-top: -11px;
+    }
+    .nav-right li{
+        float: left;
+    }
+  
+    .nav-right li a {
+        margin-right: 5px;
+    }
+    
+    .navbar ul li {
+        margin: 0 .4rem;
+        padding-top: .9rem;
+    }
+    
+    .navbar ul li a {
+        font-size: 12px;
+        padding: 6px 13px;
+    }
+    #logo {
+        margin-right: -50px; 
+        margin-left: -50px;
+    }
     .h{
         font-size: 2rem;
     }
@@ -58,18 +112,28 @@
 
     #pricing{
         grid-template-columns: 1fr 1fr ;
-        padding: 0px;
-        gap: 10px;
-    
+        padding: 25px;
+        gap: 25px;
+        
     }
-    .plan {
-        transition: none; 
+    #image2{
+        grid-area: 2;
     }
-
-    .plan:hover {
-        background: #252728;
-        transform: none;
-        transition: none;
+    .elite{
+        grid-column: auto;
     }
+      
 }
 
+  /* small mobiles */
+  @media (max-width: 500px) {
+    .nav-center{
+        position: absolute;
+        visibility: hidden;
+    }
+    #pricing{
+        grid-template-columns: 1fr;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+  }
