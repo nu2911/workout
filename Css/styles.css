@@ -166,11 +166,9 @@ header {
     text-decoration: none;
     font-weight: bold;
     border-radius: 20px;
-    /* transition: background .3s ease-in-out;  */
 }
 
 .cta:hover {
-    /* background: #393c3d; */
     color: white;
     transform: scale(1.05, 1.05);
     transition: .3s transform;
@@ -178,7 +176,6 @@ header {
 .cta:active {
     background: white;
     color: black;
-    transform: scale(1.05, 1.05);
     transition: .3s transform;
 }
 section {
@@ -195,16 +192,18 @@ section {
     grid-template-columns: 2fr 1fr;
     gap: 10px;
 }
-#image1{
-    padding: 7px;
-    padding-top: 9px;
-    width: 100%;
-}
+
 .card {
     background: #252728;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px #0000001A   
+}
+.imgCard {
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: senter;
 }
 
 .card img {
@@ -241,22 +240,16 @@ section {
     
     font-family: 'Oswald', sans-serif;
     padding-top: 20px;
-    /* font-size: 3rem;     */
     
 }
 .plan h3{
     padding-top: 20px;
-    /* font-size: 3rem;     */
     
 }
 .plan p{
-    /* font-family: 'Roboto', sans-serif; */
     padding-top: 20px;
     text-align: left;
     font-weight: bold;
-
-    /* font-size: 3rem;     */
-
 }
 .plan ul{
     padding-top: 10px;
