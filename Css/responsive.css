@@ -78,16 +78,14 @@
     .navbar ul {
         margin-top: -11px;
     }
-    .nav-right li{
-        float: left;
+    .nav-right{
+        position: absolute;
+        visibility: hidden;
     }
-  
-    .nav-right li a {
-        margin-right: 5px;
-    }
+
     
     .navbar ul li {
-        margin: 0 .4rem;
+        margin: 0 0rem;
         padding-top: .9rem;
     }
     
@@ -99,6 +97,10 @@
         margin-right: -50px; 
         margin-left: -50px;
     }
+    #logo img {
+        height: 3.5rem;  
+    }
+    
     .h{
         font-size: 2rem;
     }
@@ -139,10 +141,7 @@
 
   /* small mobiles */
   @media (max-width: 500px) {
-    .nav-center{
-        position: absolute;
-        visibility: hidden;
-    }
+    
     #pricing{
         grid-template-columns: 1fr;
         padding-left: 80px;
